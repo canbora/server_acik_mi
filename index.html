@@ -9,7 +9,7 @@
 		</span>
 	</body>
 	<script type="module">
-		const response = await fetch("https://api.mcstatus.io/v2/status/java/apx2370266.apexmc.co");
+		const response = await fetch("https://api.mcstatus.io/v2/status/java/116.202.211.203:25612");
 		const res_json = await response.json();
 		const answer = res_json?.online ? "evet" : "hayır";
 		document.getElementById("result").innerHTML = answer;
